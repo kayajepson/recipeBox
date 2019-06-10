@@ -1,14 +1,23 @@
-<h1>It's a recipe thingy!</h1>
+<body>
 
-<ul>
-  <div *ngFor="let recipe of recipes">{{recipe.title}}
-    <ul>
-      <li *ngFor="let ingredient of recipe.ingredients; let i = index"> {{recipe.ingredients[i]}}</li>
-    </ul>
-    <br>
-    <ol>
-      <li *ngFor="let step of recipe.directions; let i = index">{{recipe.directions[i]}}</li>
-    </ol>
-    <hr>
-  </div>
-</ul>
+  <h1>It's a recipe thingy!</h1>
+
+  <ul>
+    <div *ngFor="let recipe of recipes">
+      <h2>{{recipe.title}}</h2>
+
+      <ul>
+        <h4>Ingredients</h4>
+        <li *ngFor="let ingredient of recipe.ingredients; let i = index"> {{recipe.ingredients[i]}}</li>
+      </ul>
+
+      <ol>
+        <h4>Directions</h4>
+        <li *ngFor="let step of recipe.directions; let i = index">{{recipe.directions[i]}}</li>
+      </ol>
+
+      <hr>
+    </div>
+  </ul>
+
+</body>

@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'app works!';
 
   recipes: Recipe[] = [
-  new Recipe('Meatloaf', ['meat', 'loaf'], ['wash the meatloaf', 'eat the meatloaf', 'poop the meatloaf']),
-  new Recipe('PBnJ', ['P', 'B', 'J', 'bread'], ['make sando', 'eat sando'])
-];
+    new Recipe('Meatloaf', ['meat', 'loaf'], ['wash the meatloaf', 'eat the meatloaf', 'poop the meatloaf']),
+    new Recipe('PBnJ', ['P', 'B', 'J', 'bread'], ['make sando', 'eat sando'])
+  ];
 }
