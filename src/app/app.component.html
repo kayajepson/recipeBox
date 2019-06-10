@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<h1>It's a recipe thingy!</h1>
+
+<ul>
+  <p *ngFor="let recipe of recipes">{{recipe.title}}
+    <ul>
+      <li *ngFor="let ingredient of recipe.ingredients; let i = index"> {{recipe.ingredients[i]}}</li>
+    </ul>
+  </p>
+</ul>
